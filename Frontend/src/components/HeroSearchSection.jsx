@@ -1,7 +1,30 @@
+import { useEffect } from 'react';
 import bannerBg from '../assets/images/ban-bg.jpg';
 import bannerImg from '../assets/images/banner.jpg';
+import coupleImg1 from '../assets/images/couples/1.jpg';
+import coupleImg2 from '../assets/images/couples/2.jpg';
 
 export default function HeroSearchSection() {
+  useEffect(() => {
+    if (window.$ && window.$.fn.slick) {
+      const $carousel = $('.ban-sli');
+      if ($carousel.length && !$carousel.hasClass('slick-initialized')) {
+        $carousel.slick({
+          dots: false,
+          infinite: true,
+          speed: 1000,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 3000,
+          arrows: false,
+          fade: true,
+          cssEase: 'linear'
+        });
+      }
+    }
+  }, []);
+
   return (
     <>
       {/* BANNER & SEARCH */}
@@ -96,13 +119,23 @@ export default function HeroSearchSection() {
           <div>
             <ul className="ban-sli">
               <li>
-                <div className="image">
+                <div>
                   <img src={bannerBg} alt="" loading="lazy" />
                 </div>
               </li>
               <li>
-                <div className="image">
+                <div>
                   <img src={bannerImg} alt="" loading="lazy" />
+                </div>
+              </li>
+              <li>
+                <div>
+                  <img src={coupleImg1} alt="" loading="lazy" />
+                </div>
+              </li>
+              <li>
+                <div>
+                  <img src={coupleImg2} alt="" loading="lazy" />
                 </div>
               </li>
             </ul>
