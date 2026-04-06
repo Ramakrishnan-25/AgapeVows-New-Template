@@ -12748,3 +12748,1070 @@ h2.db-tit{
         padding: 10px;
     }
 }
+
+/*-------------------------------------------------------*/
+/* QUICK ACCESS & TRUSTED BRAND MOBILE OPTIMIZATIONS
+/*-------------------------------------------------------*/
+
+/* Extra Small Mobile - 320px and below */
+@media screen and (max-width:320px) {
+    .home-acces ul li {
+        width: 100%;
+        padding: 0 0;
+    }
+
+    .home-acces ul li div.hacc {
+        max-height: 250px;
+    }
+
+    .home-acces ul li div.hacc .con {
+        padding: 30px 10px 20px;
+    }
+
+    .home-acces ul li div.hacc .con img {
+        width: 60px;
+    }
+
+    .home-acces ul li div.hacc .con h4 {
+        font-size: 16px;
+    }
+
+    .home-acces ul li div.hacc .con p {
+        font-size: 12px;
+    }
+
+    .home-acces ul li div.hacc .con a {
+        font-size: 11px;
+        padding: 6px 15px;
+    }
+
+    .cus-revi ul li {
+        width: 100%;
+    }
+
+    .cus-revi {
+        padding: 20px 0 5px;
+    }
+
+    .cus-revi-box {
+        padding: 60px 15px 15px;
+        margin: 0;
+        border-radius: 5px;
+    }
+
+    .cus-revi-box .revi-im {
+        top: -50px;
+    }
+
+    .cus-revi-box .revi-im img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .cus-revi-box p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .cus-revi-box h5 {
+        font-size: 14px;
+        padding: 8px 0 0;
+    }
+
+    .cus-revi-box span {
+        font-size: 12px;
+    }
+
+    .hom-cus-revi {
+        margin-top: 80px;
+    }
+
+    .hom-cus-revi .slick-arrow {
+        width: 40px;
+        height: 40px;
+        font-size: 10px;
+    }
+
+    .hom-cus-revi .slick-arrow::before,
+    .hom-cus-revi .slick-arrow::after {
+        font-size: 20px;
+    }
+}
+
+/* Small Mobile - 321px to 479px */
+@media screen and (max-width:479px) {
+    .home-acces-main {
+        padding-top: 20px;
+    }
+
+    .home-acces {
+        padding-bottom: 50px;
+    }
+
+    .home-acces ul li {
+        width: 100%;
+        padding: 0 0;
+        margin-bottom: 15px;
+    }
+
+    .home-acces ul li div.hacc {
+        max-height: 280px;
+        border-radius: 5px;
+    }
+
+    .home-acces ul li div.hacc .con {
+        padding: 35px 15px 25px;
+    }
+
+    .home-acces ul li div.hacc .con img {
+        width: 70px;
+    }
+
+    .home-acces ul li div.hacc .con h4 {
+        font-size: 17px;
+        margin-bottom: 8px;
+    }
+
+    .home-acces ul li div.hacc .con p {
+        font-size: 13px;
+    }
+
+    .home-acces ul li div.hacc .con a {
+        font-size: 12px;
+        padding: 8px 18px;
+    }
+
+    .home-acces .slick-arrow {
+        display: none !important;
+    }
+
+    /* Trusted Brand Section */
+    .hom-cus-revi {
+        margin-top: 60px;
+        padding-top: 30px;
+        margin-bottom: 80px;
+    }
+
+    .cus-revi {
+        padding: 30px 0 5px;
+    }
+
+    .cus-revi ul li {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .cus-revi-box {
+        padding: 70px 20px 20px;
+        margin: 0;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        position: relative;
+    }
+
+    .cus-revi-box .revi-im {
+        top: -55px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .cus-revi-box .revi-im img {
+        width: 110px;
+        height: 110px;
+    }
+
+    .cus-revi-box .revi-im i {
+        width: 10px;
+        height: 10px;
+    }
+
+    .cus-revi-box .revi-im i.cir-1 {
+        left: 35px;
+        top: -5px;
+    }
+
+    .cus-revi-box .revi-im i.cir-2 {
+        left: 95px;
+        top: 8px;
+    }
+
+    .cus-revi-box .revi-im i.cir-3 {
+        left: 25px;
+        top: 75px;
+    }
+
+    .cus-revi-box p {
+        font-size: 13px;
+        line-height: 20px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .cus-revi-box h5 {
+        font-size: 15px;
+        padding: 10px 0 5px;
+        text-align: center;
+    }
+
+    .cus-revi-box span {
+        font-size: 13px;
+        text-align: center;
+        display: block;
+    }
+
+    .hom-cus-revi .slick-arrow {
+        width: 45px;
+        height: 45px;
+        top: 48%;
+    }
+
+    .hom-cus-revi .slick-prev {
+        left: -5px;
+    }
+
+    .hom-cus-revi .slick-next {
+        right: -5px;
+    }
+
+    .hom-cus-revi .slick-arrow::before,
+    .hom-cus-revi .slick-arrow::after {
+        font-size: 22px;
+    }
+
+    .cta-full-wid {
+        padding-top: 20px;
+    }
+}
+
+/* Mobile to Tablet - 480px to 576px */
+@media screen and (max-width:576px) {
+    .home-acces ul li {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .home-acces ul li div.hacc {
+        max-height: 300px;
+    }
+
+    .home-acces ul li div.hacc .con {
+        padding: 40px 20px 30px;
+    }
+
+    .home-acces ul li div.hacc .con img {
+        width: 75px;
+    }
+
+    .home-acces ul li div.hacc .con h4 {
+        font-size: 18px;
+    }
+
+    .home-acces ul li div.hacc .con p {
+        font-size: 14px;
+    }
+
+    .slider3 {
+        padding: 0 30px;
+    }
+
+    .cus-revi ul li {
+        width: 100%;
+    }
+
+    .cus-revi-box {
+        padding: 80px 25px 25px;
+        margin: 0;
+    }
+
+    .cus-revi-box .revi-im img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .cus-revi-box p {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .cus-revi-box h5 {
+        font-size: 16px;
+    }
+
+    /* Slider3 - Single Item Mobile Display */
+    .slider3.slick-slider {
+        padding: 0 15px;
+    }
+
+    .slider3.slick-slider .slick-slide {
+        padding: 5px;
+    }
+
+    .slider3 .slick-arrow {
+        width: 45px;
+        height: 45px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .slider3 .slick-prev {
+        left: -15px;
+    }
+
+    .slider3 .slick-next {
+        right: -15px;
+    }
+}
+
+/* Medium Devices - 577px to 768px */
+@media screen and (min-width:577px) and (max-width:768px) {
+    .home-acces ul li {
+        width: 50%;
+        padding: 0 5px;
+    }
+
+    .home-acces ul li div.hacc {
+        max-height: 320px;
+    }
+
+    .cus-revi ul li {
+        width: 50%;
+    }
+
+    .cus-revi-box {
+        padding: 90px 30px 30px;
+        margin: 0 8px;
+    }
+
+    .cus-revi-box .revi-im img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .slider3 {
+        padding: 0 35px;
+    }
+
+    /* Tablet - 2 Items Display */
+    .slider3.slick-slider {
+        padding: 0 30px;
+    }
+
+    .slider3 .slick-slide {
+        padding: 8px;
+    }
+
+    .slider3 .slick-arrow {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/* Desktop and Larger Devices - 769px and above */
+@media screen and (min-width:769px) {
+    /* Desktop - 3 Items Display */
+    .slider3.slick-slider {
+        padding: 0 40px;
+    }
+
+    .slider3.slick-slider .slick-slide {
+        padding: 10px;
+    }
+
+    .slider3 .slick-arrow {
+        width: 50px;
+        height: 50px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    .slider3 .slick-prev {
+        left: 5px;
+    }
+
+    .slider3 .slick-next {
+        right: 5px;
+    }
+
+    .cus-revi {
+        padding: 90px 10px 5px;
+    }
+
+    .cus-revi ul li {
+        width: 33.333%;
+    }
+
+    .cus-revi-box {
+        padding: 90px 35px 30px;
+        margin: 0 15px;
+    }
+
+    .cus-revi-box .revi-im {
+        position: absolute;
+        top: -65px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .cus-revi-box .revi-im img {
+        width: 130px;
+        height: 130px;
+    }
+
+    /* Desktop - Quick Access 3 Items Display */
+    .home-acces ul li {
+        width: 33.333%;
+        padding: 0 10px;
+    }
+
+    .home-acces ul li div.hacc {
+        max-height: 375px;
+    }
+
+    .hom-qui-acc-sli.slick-slider {
+        padding: 0 40px;
+    }
+
+    .hom-qui-acc-sli.slick-slider .slick-slide {
+        padding: 10px;
+    }
+
+    .home-acces .slick-arrow {
+        width: 50px;
+        height: 50px;
+        display: block !important;
+    }
+
+    .home-acces .slick-prev {
+        left: 5px;
+    }
+
+    .home-acces .slick-next {
+        right: 5px;
+    }
+
+    .home-acces-main .slick-arrow {
+        width: 50px;
+        height: 50px;
+        background: rgba(255, 153, 0, 0.52);
+        border: 1px solid rgba(255, 255, 255, 0.55);
+    }
+
+    .home-acces-main .slick-arrow::before,
+    .home-acces-main .slick-arrow::after {
+        font-size: 26px;
+    }
+}
+
+/* Quick Access Carousel Mobile Responsive (Special handling) */
+@media screen and (max-width:576px) {
+    /* Mobile - Single Item Display */
+    .home-acces ul li {
+        width: 100%;
+        padding: 0;
+        margin-bottom: 15px;
+    }
+
+    .hom-qui-acc-sli.slick-slider {
+        padding: 0 15px;
+    }
+
+    .hom-qui-acc-sli.slick-slider .slick-slide {
+        padding: 5px;
+    }
+
+    .home-acces .slick-arrow {
+        width: 45px;
+        height: 45px;
+        top: 50%;
+        transform: translateY(-50%);
+        display: block !important;
+    }
+
+    .home-acces .slick-prev {
+        left: -15px;
+    }
+
+    .home-acces .slick-next {
+        right: -15px;
+    }
+
+    .home-acces ul li div.hacc {
+        max-height: 280px;
+    }
+}
+
+/* Quick Access Carousel Tablet (2 items) */
+@media screen and (min-width:577px) and (max-width:992px) {
+    .home-acces ul li {
+        width: 50%;
+        padding: 0 5px;
+        margin-bottom: 15px;
+    }
+
+    .hom-qui-acc-sli.slick-slider {
+        padding: 0 30px;
+    }
+
+    .hom-qui-acc-sli.slick-slider .slick-slide {
+        padding: 8px;
+    }
+
+    .home-acces .slick-arrow {
+        width: 48px;
+        height: 48px;
+        display: block !important;
+    }
+
+    .home-acces .slick-prev {
+        left: 0;
+    }
+
+    .home-acces .slick-next {
+        right: 0;
+    }
+
+    .home-acces ul li div.hacc {
+        max-height: 320px;
+    }
+}
+
+/* ============================================
+   QUICK ACCESS CAROUSEL MOBILE RESPONSIVE
+   Shows 1 card on mobile, navigate with slider
+   ============================================ */
+
+@media screen and (max-width: 576px) {
+    /* Quick Access Section Container */
+    .home-acces-main {
+        overflow: hidden !important;
+        position: relative !important;
+        width: 100% !important;
+    }
+
+    /* Carousel Container - Hide overflow to show 1 card at a time */
+    .hom-qui-acc-sli {
+        width: 100% !important;
+        padding: 0 !important;
+        display: block !important;
+        overflow: hidden !important;
+        margin: 0 !important;
+    }
+
+    /* Slick Slider Container */
+    .hom-qui-acc-sli.slick-slider {
+        padding: 0 !important;
+        width: 100% !important;
+        overflow: hidden !important;
+        margin: 0 !important;
+    }
+
+    /* Slick Track - holds all slides */
+    .hom-qui-acc-sli .slick-track {
+        width: auto !important;
+        display: flex !important;
+    }
+
+    /* Individual Slides - Each gets 100% width */
+    .hom-qui-acc-sli .slick-slide {
+        width: 100% !important;
+        min-width: 100% !important;
+        padding: 0 !important;
+        display: block !important;
+        float: none !important;
+        margin: 0 !important;
+        opacity: 1 !important;
+        min-height: auto !important;
+    }
+
+    /* Override the 25% width for mobile - THIS IS CRITICAL */
+    .home-acces ul li {
+        width: 100% !important;
+        float: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        display: block !important;
+    }
+
+    /* Card styling for mobile */
+    .home-acces ul li div.hacc {
+        width: 100% !important;
+        float: none !important;
+        max-height: 400px !important;
+        display: block !important;
+        margin: 0 !important;
+    }
+
+    .home-acces ul li div.hacc .con {
+        padding: 50px 15px 40px !important;
+        width: 100% !important;
+        display: block !important;
+    }
+
+    .home-acces ul li div.hacc .con img {
+        width: 100px !important;
+        height: auto !important;
+        margin: 0 auto 20px !important;
+        display: block !important;
+    }
+
+    .home-acces ul li div.hacc .con h4 {
+        font-size: 18px !important;
+        margin-bottom: 10px !important;
+        width: 100% !important;
+    }
+
+    .home-acces ul li div.hacc .con p {
+        font-size: 14px !important;
+        width: 100% !important;
+    }
+
+    .home-acces ul li div.hacc .con a {
+        display: inline-block !important;
+        padding: 10px 20px !important;
+        font-size: 13px !important;
+        margin-top: 10px !important;
+    }
+
+    /* Carousel navigation arrows - positioned outside */
+    .home-acces-main .slick-arrow {
+        width: 40px !important;
+        height: 40px !important;
+        z-index: 10 !important;
+        top: 50% !important;
+        transform: translateY(-50%) !important;
+        background-color: rgba(0, 0, 0, 0.5) !important;
+    }
+
+    .home-acces-main .slick-prev {
+        left: -20px !important;
+    }
+
+    .home-acces-main .slick-next {
+        right: -20px !important;
+    }
+
+    /* Slick dots styling if enabled */
+    .hom-qui-acc-sli .slick-dots {
+        padding-top: 20px !important;
+        text-align: center !important;
+        bottom: -40px !important;
+    }
+
+    .hom-qui-acc-sli .slick-dots li {
+        width: auto !important;
+        margin: 0 5px !important;
+    }
+
+    .hom-qui-acc-sli .slick-dots li button {
+        width: 12px !important;
+        height: 12px !important;
+        padding: 0 !important;
+    }
+
+    /* Ensure slides don't stack visually */
+    .home-acces {
+        width: 100% !important;
+        padding-bottom: 40px !important;
+        overflow: hidden !important;
+    }
+
+    /* ========== TRUSTED BRAND CAROUSEL MOBILE ========== */
+    /* Shows 1 card on mobile, navigate with slider */
+
+    .hom-cus-revi {
+        width: 100% !important;
+        overflow: hidden !important;
+        padding: 20px 0 40px 0 !important;
+        position: relative !important;
+        height: auto !important;
+    }
+
+    /* Carousel Container - Hide overflow to show 1 card at a time */
+    .slider3 {
+        width: 100% !important;
+        padding: 0 !important;
+        display: block !important;
+        overflow: hidden !important;
+        margin: 0 !important;
+        height: auto !important;
+    }
+
+    /* Slick Slider Container */
+    .slider3.slick-slider {
+        padding: 0 !important;
+        width: 100% !important;
+        overflow: hidden !important;
+        margin: 0 !important;
+        height: auto !important;
+    }
+
+    /* Slick Track - holds all slides */
+    .slider3 .slick-track {
+        width: auto !important;
+        display: flex !important;
+        height: auto !important;
+    }
+
+    /* Individual Slides - Each gets 100% width */
+    .slider3 .slick-slide {
+        width: 100% !important;
+        min-width: 100% !important;
+        padding: 0 !important;
+        display: block !important;
+        float: none !important;
+        margin: 0 !important;
+        opacity: 1 !important;
+        min-height: auto !important;
+        height: auto !important;
+    }
+
+    /* Card Container */
+    .slid-inn.cus-revi {
+        width: 100% !important;
+        display: block !important;
+        height: auto !important;
+    }
+
+    /* Card styling for mobile - Full width, no hiding */
+    .cus-revi-box {
+        width: 100% !important;
+        float: none !important;
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        margin: 0 auto !important;
+        padding: 25px 15px !important;
+        height: auto !important;
+        background-color: #fff !important;
+        border-radius: 8px !important;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+    }
+
+    /* Review image styling - ALL VISIBLE */
+    .cus-revi-box .revi-im {
+        width: 100% !important;
+        height: 150px !important;
+        padding: 20px 0 !important;
+        text-align: center !important;
+        margin-bottom: 15px !important;
+        position: relative !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        visibility: visible !important;
+        overflow: visible !important;
+    }
+
+    /* Profile image */
+    .cus-revi-box .revi-im img {
+        width: 90px !important;
+        height: 90px !important;
+        border-radius: 50% !important;
+        object-fit: cover !important;
+        display: block !important;
+        margin: 0 auto !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        z-index: 5 !important;
+    }
+
+    /* Decorative circles - Scale down for mobile, NOT hidden */
+    .cus-revi-box .revi-im i {
+        position: absolute !important;
+        border-radius: 50% !important;
+        opacity: 0.3 !important;
+        visibility: visible !important;
+        display: inline-block !important;
+    }
+
+    .cus-revi-box .revi-im i.cir-1 {
+        width: 60px !important;
+        height: 60px !important;
+        top: -10px !important;
+        left: 10px !important;
+    }
+
+    .cus-revi-box .revi-im i.cir-2 {
+        width: 40px !important;
+        height: 40px !important;
+        top: 35px !important;
+        right: 5px !important;
+    }
+
+    .cus-revi-box .revi-im i.cir-3 {
+        width: 35px !important;
+        height: 35px !important;
+        bottom: 10px !important;
+        left: 20px !important;
+    }
+
+    /* Review text styling - ALL VISIBLE */
+    .cus-revi-box p {
+        font-size: 13px !important;
+        line-height: 18px !important;
+        width: 100% !important;
+        margin-bottom: 12px !important;
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        color: #666 !important;
+    }
+
+    /* Reviewer name */
+    .cus-revi-box h5 {
+        font-size: 15px !important;
+        font-weight: 600 !important;
+        margin-bottom: 3px !important;
+        width: 100% !important;
+        display: block !important;
+        visibility: visible !important;
+        color: #333 !important;
+    }
+
+    /* Location */
+    .cus-revi-box span {
+        font-size: 12px !important;
+        width: 100% !important;
+        display: block !important;
+        visibility: visible !important;
+        color: #999 !important;
+    }
+
+    /* Carousel navigation arrows */
+    .hom-cus-revi .slick-arrow {
+        width: 40px !important;
+        height: 40px !important;
+        z-index: 10 !important;
+        top: 40% !important;
+        transform: translateY(-50%) !important;
+        background-color: rgba(0, 0, 0, 0.5) !important;
+        opacity: 1 !important;
+        display: block !important;
+        visibility: visible !important;
+    }
+
+    .hom-cus-revi .slick-prev {
+        left: 5px !important;
+    }
+
+    .hom-cus-revi .slick-next {
+        right: 5px !important;
+    }
+
+    /* Slick dots styling if enabled */
+    .slider3 .slick-dots {
+        padding-top: 15px !important;
+        text-align: center !important;
+        bottom: -35px !important;
+        display: block !important;
+        visibility: visible !important;
+    }
+
+    .slider3 .slick-dots li {
+        width: auto !important;
+        margin: 0 5px !important;
+        display: inline-block !important;
+    }
+
+    .slider3 .slick-dots li button {
+        width: 10px !important;
+        height: 10px !important;
+        padding: 0 !important;
+        background-color: #ddd !important;
+    }
+
+    .slider3 .slick-dots li.slick-active button {
+        background-color: #e91e63 !important;
+    }
+}
+
+/* ========== RECENT COUPLES CAROUSEL MOBILE ========== */
+/* Shows 1 card on mobile, navigate with slider */
+
+@media screen and (max-width: 576px) {
+    .hom-couples-all {
+        width: 100% !important;
+        overflow: hidden !important;
+        padding: 40px 0 !important;
+        position: relative !important;
+        height: auto !important;
+    }
+
+    /* Carousel Container - Hide overflow to show 1 card at a time */
+    .hom-coup-test {
+        width: 100% !important;
+        padding: 0 !important;
+        display: block !important;
+        overflow: hidden !important;
+        margin: 0 !important;
+        height: auto !important;
+    }
+
+    /* Slick Slider Container */
+    .hom-coup-test.slick-slider {
+        padding: 0 !important;
+        width: 100% !important;
+        overflow: hidden !important;
+        margin: 0 !important;
+        height: auto !important;
+    }
+
+    /* Slick Track - holds all slides */
+    .hom-coup-test .slick-track {
+        width: auto !important;
+        display: flex !important;
+        height: auto !important;
+    }
+
+    /* Individual Slides - Each gets 100% width */
+    .hom-coup-test .slick-slide {
+        width: 100% !important;
+        min-width: 100% !important;
+        padding: 0 !important;
+        display: block !important;
+        float: none !important;
+        margin: 0 !important;
+        opacity: 1 !important;
+        min-height: auto !important;
+        height: auto !important;
+    }
+
+    /* Card Container */
+    .slid-inn.hom-coup-box {
+        width: 100% !important;
+        display: block !important;
+        height: auto !important;
+    }
+
+    /* Card styling for mobile - Full width, no hiding */
+    .hom-coup-box {
+        width: 100% !important;
+        float: none !important;
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        margin: 0 auto !important;
+        padding: 25px 15px !important;
+        height: auto !important;
+        background-color: #fff !important;
+        border-radius: 8px !important;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+        position: relative !important;
+    }
+
+    /* Couple Image styling */
+    .hom-coup-box img {
+        width: 100% !important;
+        height: 250px !important;
+        object-fit: cover !important;
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        border-radius: 5px !important;
+        margin-bottom: 15px !important;
+    }
+
+    /* Before/Decorative element */
+    .hom-coup-box::before {
+        display: none !important;
+    }
+
+    /* Box overlay icon */
+    .hom-coup-box .bx {
+        display: none !important;
+    }
+
+    /* Leaf decorative element */
+    .hom-coup-box .leaf {
+        display: none !important;
+    }
+
+    /* Couple name and details */
+    .hom-coup-box h4 {
+        font-size: 18px !important;
+        font-weight: 600 !important;
+        width: 100% !important;
+        display: block !important;
+        visibility: visible !important;
+        text-align: center !important;
+        margin-bottom: 8px !important;
+        color: #333 !important;
+    }
+
+    .hom-coup-box h4 span {
+        font-size: 14px !important;
+        font-weight: 400 !important;
+        display: block !important;
+        color: #999 !important;
+        margin-top: 3px !important;
+    }
+
+    /* CTA button */
+    .hom-coup-box .sml-cta {
+        width: 100% !important;
+        display: block !important;
+        visibility: visible !important;
+    }
+
+    .hom-coup-box a {
+        width: 100% !important;
+        display: inline-block !important;
+        padding: 10px 20px !important;
+        text-align: center !important;
+        font-size: 12px !important;
+    }
+
+    /* Carousel navigation arrows */
+    .hom-couples-all .slick-arrow {
+        width: 40px !important;
+        height: 40px !important;
+        z-index: 10 !important;
+        top: 45% !important;
+        transform: translateY(-50%) !important;
+        background-color: rgba(0, 0, 0, 0.5) !important;
+        opacity: 1 !important;
+        display: block !important;
+        visibility: visible !important;
+    }
+
+    .hom-couples-all .slick-prev {
+        left: 5px !important;
+    }
+
+    .hom-couples-all .slick-next {
+        right: 5px !important;
+    }
+
+    /* Arrow icons */
+    .hom-couples-all .slick-arrow::before,
+    .hom-couples-all .slick-arrow::after {
+        font-size: 18px !important;
+        color: #fff !important;
+    }
+
+    /* Slick dots styling if enabled */
+    .hom-coup-test .slick-dots {
+        padding-top: 15px !important;
+        text-align: center !important;
+        bottom: -35px !important;
+        display: block !important;
+        visibility: visible !important;
+    }
+
+    .hom-coup-test .slick-dots li {
+        width: auto !important;
+        margin: 0 5px !important;
+        display: inline-block !important;
+    }
+
+    .hom-coup-test .slick-dots li button {
+        width: 10px !important;
+        height: 10px !important;
+        padding: 0 !important;
+        background-color: #ddd !important;
+    }
+
+    .hom-coup-test .slick-dots li.slick-active button {
+        background-color: #e91e63 !important;
+    }
+}

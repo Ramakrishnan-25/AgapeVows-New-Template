@@ -12228,3 +12228,881 @@ h2.db-tit{
         margin-right: 7px;
     }
 }
+
+/* ============================================
+   CRITICAL MOBILE RESPONSIVE FIXES
+   Ensures ALL sections are visible on mobile
+   ============================================ */
+
+@media screen and (max-width: 576px) {
+    /* Ensure all sections are visible */
+    body,
+    html {
+        width: 100%;
+        height: auto;
+        overflow-x: hidden;
+    }
+
+    section {
+        display: block !important;
+        width: 100% !important;
+        visibility: visible !important;
+        height: auto !important;
+        padding: 20px 0 !important;
+    }
+
+    .str {
+        display: block !important;
+        width: 100% !important;
+        visibility: visible !important;
+        height: auto !important;
+        padding: 20px 0 !important;
+    }
+
+    .container {
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        padding: 0 15px !important;
+        margin: 0 auto !important;
+    }
+
+    .row {
+        display: block !important;
+        width: 100% !important;
+        margin: 0 !important;
+    }
+
+    /* Grid Column Stacking */
+    .col-lg-6,
+    .col-md-6,
+    .col-sm-6,
+    .col-12,
+    .col-xs-12,
+    [class*="col-"] {
+        display: block !important;
+        width: 100% !important;
+        float: none !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        margin-bottom: 15px !important;
+    }
+
+    /* Welcome Section - Critical Fix */
+    .ab-wel {
+        display: block !important;
+        width: 100% !important;
+        padding: 20px 0 !important;
+    }
+
+    .ab-wel-lhs {
+        display: block !important;
+        width: 100% !important;
+        margin-bottom: 20px !important;
+        text-align: center !important;
+    }
+
+    .ab-wel-lhs img {
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        height: auto !important;
+        margin: 0 auto !important;
+    }
+
+    .ab-wel-rhs {
+        display: block !important;
+        width: 100% !important;
+        padding: 0 !important;
+    }
+
+    /* Timeline Section */
+    .wedd-tline {
+        display: block !important;
+        width: 100% !important;
+    }
+
+    .tline-inn {
+        display: block !important;
+        width: 100% !important;
+        margin-bottom: 30px !important;
+        float: none !important;
+    }
+
+    .tline-inn-reve {
+        display: block !important;
+        width: 100% !important;
+        margin-bottom: 30px !important;
+        float: none !important;
+    }
+
+    .tline-im {
+        display: block !important;
+        width: 100% !important;
+        float: none !important;
+        margin: 0 0 15px 0 !important;
+        padding: 0 !important;
+    }
+
+    .tline-im img {
+        display: block !important;
+        width: 80px !important;
+        height: 80px !important;
+        margin: 0 auto 15px !important;
+    }
+
+    .tline-con {
+        display: block !important;
+        width: 100% !important;
+        float: none !important;
+        padding: 20px !important;
+        text-align: center !important;
+    }
+
+    .tline-inn-reve .tline-con {
+        display: block !important;
+        width: 100% !important;
+        float: none !important;
+        padding: 20px !important;
+        text-align: center !important;
+    }
+
+    .tline-inn-reve .tline-im {
+        display: block !important;
+        width: 100% !important;
+        float: none !important;
+        margin: 0 0 15px 0 !important;
+    }
+
+    .wedd-tline .inn ul:before {
+        display: none !important;
+    }
+
+    .wedd-tline .inn ul li:before {
+        display: none !important;
+    }
+
+    /* Blog Section */
+    .blog-box,
+    .blog-home-box {
+        display: block !important;
+        width: 100% !important;
+        float: none !important;
+        margin-bottom: 20px !important;
+    }
+
+    .blog-home-box .im {
+        display: block !important;
+        width: 100% !important;
+    }
+
+    .blog-home-box .im img {
+        display: block !important;
+        width: 100% !important;
+        height: auto !important;
+        max-height: 250px !important;
+        object-fit: cover !important;
+    }
+
+    .blog-home-box .txt {
+        display: block !important;
+        width: 100% !important;
+        padding: 15px !important;
+    }
+
+    /* Card/Box Styling for Mobile */
+    .cus-revi-box,
+    .hom-oth,
+    .hom-coup-box,
+    .hom-feature-box {
+        display: block !important;
+        width: 100% !important;
+        float: none !important;
+        margin-bottom: 20px !important;
+        padding: 15px !important;
+    }
+
+    /* Carousel Items */
+    .slick-slide {
+        display: block !important;
+        width: 100% !important;
+        float: none !important;
+    }
+
+    .hacc {
+        display: block !important;
+        width: 100% !important;
+    }
+
+    .hacc .con {
+        display: block !important;
+        width: 100% !important;
+        padding: 20px !important;
+    }
+
+    .hacc .con img {
+        display: block !important;
+        width: auto !important;
+        max-width: 80px !important;
+        height: auto !important;
+        margin: 0 auto 10px !important;
+    }
+
+    /* Hero/Header Section */
+    .hom-ban {
+        display: block !important;
+        width: 100% !important;
+        padding: 20px 0 !important;
+    }
+
+    .ban-search {
+        display: block !important;
+        width: 100% !important;
+        padding: 15px !important;
+    }
+
+    .ban-search ul {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    .ban-search ul li {
+        display: block !important;
+        width: 100% !important;
+        margin-bottom: 10px !important;
+    }
+
+    /* Features Section */
+    .feature-box,
+    .why-box {
+        display: block !important;
+        width: 100% !important;
+        float: none !important;
+        margin-bottom: 20px !important;
+    }
+
+    /* Text Sizing */
+    h1 {
+        font-size: 24px !important;
+        line-height: 30px !important;
+    }
+
+    h2 {
+        font-size: 20px !important;
+        line-height: 26px !important;
+    }
+
+    h3 {
+        font-size: 18px !important;
+        line-height: 24px !important;
+    }
+
+    h4, h5, h6 {
+        font-size: 16px !important;
+        line-height: 20px !important;
+    }
+
+    p, span, a, li {
+        font-size: 14px !important;
+        line-height: 20px !important;
+    }
+
+    /* Buttons */
+    a.cta-dark,
+    a.cta-pink,
+    button,
+    input[type="submit"] {
+        display: inline-block !important;
+        width: auto !important;
+        padding: 12px 20px !important;
+        font-size: 14px !important;
+        min-height: 44px !important;
+        min-width: 44px !important;
+    }
+
+    /* Forms */
+    .form-group {
+        display: block !important;
+        width: 100% !important;
+        margin-bottom: 15px !important;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="number"],
+    select,
+    textarea {
+        display: block !important;
+        width: 100% !important;
+        padding: 12px !important;
+        font-size: 16px !important;
+        min-height: 44px !important;
+    }
+
+    /* Ensure visibility for specific sections */
+    .home-acces,
+    .hom-qui-acc-sli {
+        display: block !important;
+        width: 100% !important;
+        visibility: visible !important;
+    }
+
+    .hom-cus-revi,
+    .hom-brand-tru,
+    .slider3 {
+        display: block !important;
+        width: 100% !important;
+        visibility: visible !important;
+        position: static !important;
+        top: auto !important;
+    }
+
+    .couple-sli,
+    .hom-coup-test {
+        display: block !important;
+        width: 100% !important;
+        visibility: visible !important;
+    }
+}
+
+/* ============================================
+   QUICK ACCESS CAROUSEL MOBILE RESPONSIVE
+   Shows 1 card on mobile, navigate with slider
+   ============================================ */
+
+@media screen and (max-width: 576px) {
+    /* Quick Access Section Container */
+    .home-acces-main {
+        overflow: hidden !important;
+        position: relative !important;
+        width: 100% !important;
+    }
+
+    /* Carousel Container - Hide overflow to show 1 card at a time */
+    .hom-qui-acc-sli {
+        width: 100% !important;
+        padding: 0 !important;
+        display: block !important;
+        overflow: hidden !important;
+        margin: 0 !important;
+    }
+
+    /* Slick Slider Container */
+    .hom-qui-acc-sli.slick-slider {
+        padding: 0 !important;
+        width: 100% !important;
+        overflow: hidden !important;
+        margin: 0 !important;
+    }
+
+    /* Slick Track - holds all slides */
+    .hom-qui-acc-sli .slick-track {
+        width: auto !important;
+        display: flex !important;
+    }
+
+    /* Individual Slides - Each gets 100% width */
+    .hom-qui-acc-sli .slick-slide {
+        width: 100% !important;
+        min-width: 100% !important;
+        padding: 0 !important;
+        display: block !important;
+        float: none !important;
+        margin: 0 !important;
+        opacity: 1 !important;
+        min-height: auto !important;
+    }
+
+    /* Override the 25% width for mobile - THIS IS CRITICAL */
+    .home-acces ul li {
+        width: 100% !important;
+        float: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+        display: block !important;
+    }
+
+    /* Card styling for mobile */
+    .home-acces ul li div.hacc {
+        width: 100% !important;
+        float: none !important;
+        max-height: 400px !important;
+        display: block !important;
+        margin: 0 !important;
+    }
+
+    .home-acces ul li div.hacc .con {
+        padding: 50px 15px 40px !important;
+        width: 100% !important;
+        display: block !important;
+    }
+
+    .home-acces ul li div.hacc .con img {
+        width: 100px !important;
+        height: auto !important;
+        margin: 0 auto 20px !important;
+        display: block !important;
+    }
+
+    .home-acces ul li div.hacc .con h4 {
+        font-size: 18px !important;
+        margin-bottom: 10px !important;
+        width: 100% !important;
+    }
+
+    .home-acces ul li div.hacc .con p {
+        font-size: 14px !important;
+        width: 100% !important;
+    }
+
+    .home-acces ul li div.hacc .con a {
+        display: inline-block !important;
+        padding: 10px 20px !important;
+        font-size: 13px !important;
+        margin-top: 10px !important;
+    }
+
+    /* Carousel navigation arrows - positioned outside */
+    .home-acces-main .slick-arrow {
+        width: 40px !important;
+        height: 40px !important;
+        z-index: 10 !important;
+        top: 50% !important;
+        transform: translateY(-50%) !important;
+        background-color: rgba(0, 0, 0, 0.5) !important;
+    }
+
+    .home-acces-main .slick-prev {
+        left: -20px !important;
+    }
+
+    .home-acces-main .slick-next {
+        right: -20px !important;
+    }
+
+    /* Slick dots styling if enabled */
+    .hom-qui-acc-sli .slick-dots {
+        padding-top: 20px !important;
+        text-align: center !important;
+        bottom: -40px !important;
+    }
+
+    .hom-qui-acc-sli .slick-dots li {
+        width: auto !important;
+        margin: 0 5px !important;
+    }
+
+    .hom-qui-acc-sli .slick-dots li button {
+        width: 12px !important;
+        height: 12px !important;
+        padding: 0 !important;
+    }
+
+    /* Ensure slides don't stack visually */
+    .home-acces {
+        width: 100% !important;
+        padding-bottom: 40px !important;
+        overflow: hidden !important;
+    }
+
+    /* ========== TRUSTED BRAND CAROUSEL MOBILE ========== */
+    /* Shows 1 card on mobile, navigate with slider */
+
+    .hom-cus-revi {
+        width: 100% !important;
+        overflow: hidden !important;
+        padding: 20px 0 40px 0 !important;
+        position: relative !important;
+        height: auto !important;
+    }
+
+    /* Carousel Container - Hide overflow to show 1 card at a time */
+    .slider3 {
+        width: 100% !important;
+        padding: 0 !important;
+        display: block !important;
+        overflow: hidden !important;
+        margin: 0 !important;
+        height: auto !important;
+    }
+
+    /* Slick Slider Container */
+    .slider3.slick-slider {
+        padding: 0 !important;
+        width: 100% !important;
+        overflow: hidden !important;
+        margin: 0 !important;
+        height: auto !important;
+    }
+
+    /* Slick Track - holds all slides */
+    .slider3 .slick-track {
+        width: auto !important;
+        display: flex !important;
+        height: auto !important;
+    }
+
+    /* Individual Slides - Each gets 100% width */
+    .slider3 .slick-slide {
+        width: 100% !important;
+        min-width: 100% !important;
+        padding: 0 !important;
+        display: block !important;
+        float: none !important;
+        margin: 0 !important;
+        opacity: 1 !important;
+        min-height: auto !important;
+        height: auto !important;
+    }
+
+    /* Card Container */
+    .slid-inn.cus-revi {
+        width: 100% !important;
+        display: block !important;
+        height: auto !important;
+    }
+
+    /* Card styling for mobile - Full width, no hiding */
+    .cus-revi-box {
+        width: 100% !important;
+        float: none !important;
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        margin: 0 auto !important;
+        padding: 25px 15px !important;
+        height: auto !important;
+        background-color: #fff !important;
+        border-radius: 8px !important;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+    }
+
+    /* Review image styling - ALL VISIBLE */
+    .cus-revi-box .revi-im {
+        width: 100% !important;
+        height: 150px !important;
+        padding: 20px 0 !important;
+        text-align: center !important;
+        margin-bottom: 15px !important;
+        position: relative !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        visibility: visible !important;
+        overflow: visible !important;
+    }
+
+    /* Profile image */
+    .cus-revi-box .revi-im img {
+        width: 90px !important;
+        height: 90px !important;
+        border-radius: 50% !important;
+        object-fit: cover !important;
+        display: block !important;
+        margin: 0 auto !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        z-index: 5 !important;
+    }
+
+    /* Decorative circles - Scale down for mobile, NOT hidden */
+    .cus-revi-box .revi-im i {
+        position: absolute !important;
+        border-radius: 50% !important;
+        opacity: 0.3 !important;
+        visibility: visible !important;
+        display: inline-block !important;
+    }
+
+    .cus-revi-box .revi-im i.cir-1 {
+        width: 60px !important;
+        height: 60px !important;
+        top: -10px !important;
+        left: 10px !important;
+    }
+
+    .cus-revi-box .revi-im i.cir-2 {
+        width: 40px !important;
+        height: 40px !important;
+        top: 35px !important;
+        right: 5px !important;
+    }
+
+    .cus-revi-box .revi-im i.cir-3 {
+        width: 35px !important;
+        height: 35px !important;
+        bottom: 10px !important;
+        left: 20px !important;
+    }
+
+    /* Review text styling - ALL VISIBLE */
+    .cus-revi-box p {
+        font-size: 13px !important;
+        line-height: 18px !important;
+        width: 100% !important;
+        margin-bottom: 12px !important;
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        color: #666 !important;
+    }
+
+    /* Reviewer name */
+    .cus-revi-box h5 {
+        font-size: 15px !important;
+        font-weight: 600 !important;
+        margin-bottom: 3px !important;
+        width: 100% !important;
+        display: block !important;
+        visibility: visible !important;
+        color: #333 !important;
+    }
+
+    /* Location */
+    .cus-revi-box span {
+        font-size: 12px !important;
+        width: 100% !important;
+        display: block !important;
+        visibility: visible !important;
+        color: #999 !important;
+    }
+
+    /* Carousel navigation arrows */
+    .hom-cus-revi .slick-arrow {
+        width: 40px !important;
+        height: 40px !important;
+        z-index: 10 !important;
+        top: 40% !important;
+        transform: translateY(-50%) !important;
+        background-color: rgba(0, 0, 0, 0.5) !important;
+        opacity: 1 !important;
+        display: block !important;
+        visibility: visible !important;
+    }
+
+    .hom-cus-revi .slick-prev {
+        left: 5px !important;
+    }
+
+    .hom-cus-revi .slick-next {
+        right: 5px !important;
+    }
+
+    /* Slick dots styling if enabled */
+    .slider3 .slick-dots {
+        padding-top: 15px !important;
+        text-align: center !important;
+        bottom: -35px !important;
+        display: block !important;
+        visibility: visible !important;
+    }
+
+    .slider3 .slick-dots li {
+        width: auto !important;
+        margin: 0 5px !important;
+        display: inline-block !important;
+    }
+
+    .slider3 .slick-dots li button {
+        width: 10px !important;
+        height: 10px !important;
+        padding: 0 !important;
+        background-color: #ddd !important;
+    }
+
+    .slider3 .slick-dots li.slick-active button {
+        background-color: #e91e63 !important;
+    }
+}
+
+/* ========== RECENT COUPLES CAROUSEL MOBILE ========== */
+/* Shows 1 card on mobile, navigate with slider */
+
+@media screen and (max-width: 576px) {
+    .hom-couples-all {
+        width: 100% !important;
+        overflow: hidden !important;
+        padding: 40px 0 !important;
+        position: relative !important;
+        height: auto !important;
+    }
+
+    /* Carousel Container - Hide overflow to show 1 card at a time */
+    .hom-coup-test {
+        width: 100% !important;
+        padding: 0 !important;
+        display: block !important;
+        overflow: hidden !important;
+        margin: 0 !important;
+        height: auto !important;
+    }
+
+    /* Slick Slider Container */
+    .hom-coup-test.slick-slider {
+        padding: 0 !important;
+        width: 100% !important;
+        overflow: hidden !important;
+        margin: 0 !important;
+        height: auto !important;
+    }
+
+    /* Slick Track - holds all slides */
+    .hom-coup-test .slick-track {
+        width: auto !important;
+        display: flex !important;
+        height: auto !important;
+    }
+
+    /* Individual Slides - Each gets 100% width */
+    .hom-coup-test .slick-slide {
+        width: 100% !important;
+        min-width: 100% !important;
+        padding: 0 !important;
+        display: block !important;
+        float: none !important;
+        margin: 0 !important;
+        opacity: 1 !important;
+        min-height: auto !important;
+        height: auto !important;
+    }
+
+    /* Card Container */
+    .slid-inn.hom-coup-box {
+        width: 100% !important;
+        display: block !important;
+        height: auto !important;
+    }
+
+    /* Card styling for mobile - Full width, no hiding */
+    .hom-coup-box {
+        width: 100% !important;
+        float: none !important;
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        margin: 0 auto !important;
+        padding: 25px 15px !important;
+        height: auto !important;
+        background-color: #fff !important;
+        border-radius: 8px !important;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1) !important;
+        position: relative !important;
+    }
+
+    /* Couple Image styling */
+    .hom-coup-box img {
+        width: 100% !important;
+        height: 250px !important;
+        object-fit: cover !important;
+        display: block !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        border-radius: 5px !important;
+        margin-bottom: 15px !important;
+    }
+
+    /* Before/Decorative element */
+    .hom-coup-box::before {
+        display: none !important;
+    }
+
+    /* Box overlay icon */
+    .hom-coup-box .bx {
+        display: none !important;
+    }
+
+    /* Leaf decorative element */
+    .hom-coup-box .leaf {
+        display: none !important;
+    }
+
+    /* Couple name and details */
+    .hom-coup-box h4 {
+        font-size: 18px !important;
+        font-weight: 600 !important;
+        width: 100% !important;
+        display: block !important;
+        visibility: visible !important;
+        text-align: center !important;
+        margin-bottom: 8px !important;
+        color: #333 !important;
+    }
+
+    .hom-coup-box h4 span {
+        font-size: 14px !important;
+        font-weight: 400 !important;
+        display: block !important;
+        color: #999 !important;
+        margin-top: 3px !important;
+    }
+
+    /* CTA button */
+    .hom-coup-box .sml-cta {
+        width: 100% !important;
+        display: block !important;
+        visibility: visible !important;
+    }
+
+    .hom-coup-box a {
+        width: 100% !important;
+        display: inline-block !important;
+        padding: 10px 20px !important;
+        text-align: center !important;
+        font-size: 12px !important;
+    }
+
+    /* Carousel navigation arrows */
+    .hom-couples-all .slick-arrow {
+        width: 40px !important;
+        height: 40px !important;
+        z-index: 10 !important;
+        top: 45% !important;
+        transform: translateY(-50%) !important;
+        background-color: rgba(0, 0, 0, 0.5) !important;
+        opacity: 1 !important;
+        display: block !important;
+        visibility: visible !important;
+    }
+
+    .hom-couples-all .slick-prev {
+        left: 5px !important;
+    }
+
+    .hom-couples-all .slick-next {
+        right: 5px !important;
+    }
+
+    /* Arrow icons */
+    .hom-couples-all .slick-arrow::before,
+    .hom-couples-all .slick-arrow::after {
+        font-size: 18px !important;
+        color: #fff !important;
+    }
+
+    /* Slick dots styling if enabled */
+    .hom-coup-test .slick-dots {
+        padding-top: 15px !important;
+        text-align: center !important;
+        bottom: -35px !important;
+        display: block !important;
+        visibility: visible !important;
+    }
+
+    .hom-coup-test .slick-dots li {
+        width: auto !important;
+        margin: 0 5px !important;
+        display: inline-block !important;
+    }
+
+    .hom-coup-test .slick-dots li button {
+        width: 10px !important;
+        height: 10px !important;
+        padding: 0 !important;
+        background-color: #ddd !important;
+    }
+
+    .hom-coup-test .slick-dots li.slick-active button {
+        background-color: #e91e63 !important;
+    }
+}

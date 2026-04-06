@@ -23,6 +23,22 @@ export default function RecentCouplesSection() {
           speed: 500,
           prevArrow: '<button type="button" class="slick-prev"></button>',
           nextArrow: '<button type="button" class="slick-next"></button>',
+          responsive: [
+            {
+              breakpoint: 992,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+              }
+            },
+            {
+              breakpoint: 576,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+              }
+            }
+          ]
         });
       }
     }
