@@ -11654,6 +11654,8 @@ h2.db-tit{
 
     .hom-brand-tru {
         padding: 40px 0px;
+        position: relative;
+        top: 138px;
     }
 
     .hom-brand-tru .hom-br-in {
@@ -12226,5 +12228,523 @@ h2.db-tit{
 
     .wedd-info ul li i {
         margin-right: 7px;
+    }
+}
+
+/*-------------------------------------------------------*/
+/* COMPREHENSIVE MOBILE RESPONSIVE ENHANCEMENTS
+/*-------------------------------------------------------*/
+
+/* Extra Small Mobile Devices (Below 320px) */
+@media screen and (max-width:320px) {
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    h2 {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    h3 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    h4, h5, h6 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .container {
+        max-width: 95%;
+        padding: 0 10px;
+    }
+
+    .ban-search ul li {
+        width: 100%;
+        padding: 5px 0;
+        margin-bottom: 10px;
+    }
+
+    .ban-search ul li.sr-look,
+    .ban-search ul li.sr-age,
+    .ban-search ul li.sr-reli,
+    .ban-search ul li.sr-cit,
+    .ban-search ul li.sr-sea {
+        width: 100%;
+    }
+
+    .ban-search {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .slick-slide {
+        padding: 10px 5px;
+    }
+
+    section {
+        padding: 30px 0;
+    }
+
+    .str {
+        padding: 20px 0;
+    }
+}
+
+/* Mobile Devices 320px to 479px */
+@media screen and (max-width:479px) {
+    body {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    h1 {
+        font-size: 26px;
+        line-height: 32px;
+    }
+
+    h2 {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    .container {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+
+    /* Banner and Search */
+    .hom-head {
+        padding: 40px 0;
+    }
+
+    .hom-ban {
+        padding: 20px 0;
+    }
+
+    .ban-tit h1 {
+        font-size: 28px;
+        line-height: 36px;
+    }
+
+    .ban-tit p {
+        font-size: 14px;
+    }
+
+    .ban-search {
+        width: 100%;
+        padding: 15px 10px;
+        display: block;
+    }
+
+    .ban-search ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .ban-search ul li {
+        width: 100%;
+        padding: 5px 0;
+        margin-bottom: 10px;
+    }
+
+    .ban-search ul li.sr-look,
+    .ban-search ul li.sr-age,
+    .ban-search ul li.sr-reli,
+    .ban-search ul li.sr-cit {
+        width: 100%;
+        margin: 0;
+    }
+
+    .ban-search ul li.sr-sea {
+        width: 100%;
+        margin: 0;
+    }
+
+    .ban-search ul li input[type="submit"] {
+        width: 100%;
+        padding: 12px 15px;
+        font-size: 16px;
+    }
+
+    /* Carousel */
+    .slick-carousel {
+        padding: 0 30px;
+    }
+
+    .slick-slide {
+        padding: 5px;
+    }
+
+    /* Quick Access Section */
+    .home-acces ul li {
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    .home-acces ul li div.hacc .con {
+        padding: 40px 15px 30px;
+    }
+
+    .home-acces ul li div.hacc .con img {
+        width: 80px;
+    }
+
+    .home-acces ul li div.hacc .con h4 {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+
+    .home-acces ul li div.hacc .con p {
+        font-size: 14px;
+    }
+
+    /* Home Title */
+    .home-tit {
+        margin-bottom: 30px;
+    }
+
+    .home-tit p {
+        font-size: 12px;
+    }
+
+    .home-tit h2 {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    /* Section Spacing */
+    .str {
+        padding: 30px 0;
+    }
+
+    section {
+        padding: 25px 0;
+    }
+
+    /* Forms */
+    .form-group {
+        margin-bottom: 12px;
+    }
+
+    .form-group label {
+        font-size: 13px;
+        margin-bottom: 6px;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        font-size: 14px;
+        padding: 10px 12px;
+        min-height: 44px;
+    }
+
+    /* Buttons */
+    .cta-dark,
+    .cta-pink,
+    button,
+    input[type="submit"] {
+        padding: 12px 20px;
+        font-size: 14px;
+        min-height: 44px;
+        min-width: 44px;
+    }
+
+    /* Grid/Row */
+    .row {
+        margin: 0;
+    }
+
+    .col-sm-6,
+    .col-md-6,
+    .col-lg-6 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* Card/Box Styling */
+    .cus-revi-box,
+    .hom-oth,
+    .all-pro-box,
+    .ab-team-bx {
+        margin-bottom: 15px;
+        padding: 15px;
+    }
+
+    /* Footer */
+    .foot-inn {
+        margin-bottom: 20px;
+    }
+
+    .foot-inn div {
+        margin-bottom: 15px;
+    }
+
+    .foot-inn div h5 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    /* List Items */
+    ul li,
+    .row > [class*="col-"] {
+        margin-bottom: 10px;
+    }
+
+    /* Image Responsiveness */
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Text Overflow Protection */
+    .text-truncate {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    /* Blog/Gallery */
+    .blog-box,
+    .gal-box {
+        margin-bottom: 15px;
+    }
+
+    .blog-box img,
+    .gal-box img {
+        height: auto;
+        max-width: 100%;
+    }
+
+    /* About Section */
+    .ab-wel-intro {
+        padding: 20px 15px;
+    }
+
+    .ab-sec2 ul li {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    /* Stats Section */
+    .sta-bx {
+        padding: 20px 15px;
+        margin-bottom: 15px;
+    }
+
+    .sta-bx h4 {
+        font-size: 24px;
+    }
+
+    /* How It Works */
+    .int-how ul li {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .int-how ul li div {
+        padding: 20px 15px;
+    }
+
+    /* Team Section */
+    .ab-team ul li {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* Pricing Section */
+    .pri ul li {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* Navigation */
+    .top-menu,
+    .main-menu {
+        display: block;
+    }
+
+    .menu-toggles {
+        display: block;
+    }
+
+    /* Overall Padding Reduction */
+    .hom-ab,
+    .hom-cus-revi,
+    .hom-how,
+    .home-acces-main {
+        padding: 20px 0;
+    }
+}
+
+/* Small Mobile Devices 480px to 576px */
+@media screen and (max-width:576px) {
+    /* Enhance Banner Search for Small Screens */
+    .ban-search ul li {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    .ban-search {
+        padding: 20px;
+    }
+
+    /* Quick Access Carousel - Show 1 item on very small screens */
+    .home-acces ul li {
+        width: 100%;
+    }
+
+    .slick-carousel {
+        padding: 0 40px;
+    }
+
+    /* Reviews Carousel */
+    .slider3 {
+        padding: 0 40px;
+    }
+
+    /* Improve Touch Targets */
+    .cta-dark,
+    .cta-pink,
+    button,
+    a.btn,
+    input[type="submit"] {
+        min-height: 48px;
+        padding: 12px 24px;
+        display: inline-block;
+    }
+
+    /* Better Card Spacing */
+    .hacc {
+        margin-bottom: 15px;
+    }
+
+    .cus-revi-box {
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+
+    /* Form Elements */
+    .form-group input,
+    .form-group select {
+        font-size: 16px;
+        padding: 12px 15px;
+        height: auto;
+        min-height: 48px;
+        border-radius: 5px;
+    }
+
+    /* Table Responsiveness */
+    table {
+        font-size: 13px;
+    }
+
+    table th,
+    table td {
+        padding: 10px 5px;
+    }
+
+    /* Modal/Popup */
+    .modal-body {
+        padding: 20px 15px;
+    }
+
+    /* Blog Section */
+    .blog-box {
+        margin-bottom: 20px;
+    }
+
+    .blog-box .blog-im {
+        height: 200px;
+    }
+
+    /* Gallery */
+    .gal-box {
+        margin-bottom: 15px;
+    }
+
+    /* Profile Section */
+    .pro-exp ul li {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    /* About Section Adjustments */
+    .ab-wel-tit h2 {
+        font-size: 28px;
+    }
+
+    /* General Padding Consistency */
+    .str {
+        padding: 25px 0;
+    }
+
+    section {
+        padding: 20px 0;
+    }
+}
+
+/* Tablet and Small Device Enhancements (577px to 767px) */
+@media screen and (min-width:577px) and (max-width:767px) {
+    .container {
+        max-width: 540px;
+    }
+
+    .ban-search ul li {
+        width: 50%;
+        padding: 0 5px;
+    }
+
+    .ban-search ul li.sr-sea {
+        width: 100%;
+    }
+
+    .home-acces ul li {
+        width: 50%;
+    }
+
+    .int-how ul li {
+        width: 50%;
+    }
+
+    .ab-team ul li {
+        width: 50%;
+    }
+
+    .pri ul li {
+        width: 50%;
+    }
+
+    .cus-revi-box {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 28px;
+    }
+
+    .home-tit h2 {
+        font-size: 32px;
+    }
+
+    .ban-tit h1 {
+        font-size: 36px;
+    }
+
+    /* Carousel slides */
+    .slick-slide {
+        padding: 10px;
     }
 }
