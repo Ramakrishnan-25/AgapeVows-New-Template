@@ -1528,6 +1528,25 @@ i.fa-instagram:hover {
     color: #fff;
 }
 
+/*-------------------------------------------------------*/
+/* BANNER WRAPPER - LEFT & RIGHT LAYOUT
+/*-------------------------------------------------------*/
+.hom-ban-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    width: 100%;
+}
+
+.hom-ban-wrapper .ban-tit {
+    flex: 1;
+    min-width: 0;
+}
+
+.hom-ban-wrapper .ban-search-vertical {
+    flex-shrink: 0;
+}
 
 /*-------------------------------------------------------*/
 /* BANNER SEARCH
@@ -1539,7 +1558,8 @@ i.fa-instagram:hover {
     padding: 25px;
     border-radius: 5px;
     box-shadow: rgba(51, 51, 51, 0.31) 0px 1px 16px -8px;
-    margin: 0px auto;
+    margin-left: auto;
+    margin-right: 0px;
     display: table;
 }
 
@@ -1642,6 +1662,228 @@ i.fa-instagram:hover {
     height: 45px;
     font-size: 15px;
     border-radius: 5px;
+}
+
+/*-------------------------------------------------------*/
+/* VERTICAL SEARCH FORM
+/*-------------------------------------------------------*/
+
+.ban-search-vertical {
+    width: 420px;
+    position: relative;
+    background: rgba(150, 130, 180, 0.5);
+    padding: 30px 25px;
+    border-radius: 10px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    margin: 0;
+    display: block;
+}
+
+.ban-search-vertical form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.ban-search-vertical .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin: 0;
+}
+
+.ban-search-vertical .form-group label {
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: block;
+}
+
+.ban-search-vertical .form-group select,
+.ban-search-vertical .form-group input[type="number"],
+.ban-search-vertical .form-group input[type="range"] {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    background: rgb(255, 255, 255);
+    color: rgb(50, 50, 50);
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+    height: 45px;
+}
+
+/* Hide original select when Chosen is initialized */
+.ban-search-vertical .form-group select.chosen-select {
+    display: none !important;
+    width: 0 !important;
+    height: 0 !important;
+    visibility: hidden !important;
+}
+
+/* Style the Chosen container in banner search */
+.ban-search-vertical .form-group .chosen-container {
+    display: block !important;
+    width: 100% !important;
+    margin: 0 !important;
+}
+
+.ban-search-vertical .form-group .chosen-container .chosen-single {
+    width: 100% !important;
+    padding: 12px 15px !important;
+    font-size: 14px !important;
+    border: none !important;
+    border-radius: 5px !important;
+    background: rgb(255, 255, 255) !important;
+    color: rgb(50, 50, 50) !important;
+    box-sizing: border-box !important;
+    font-family: 'Josefin Sans', sans-serif !important;
+    height: 45px !important;
+    line-height: 20px !important;
+}
+
+.ban-search-vertical .form-group .chosen-container .chosen-single span {
+    color: rgb(50, 50, 50) !important;
+}
+
+.ban-search-vertical .form-group input[type="range"] {
+    height: 6px;
+    padding: 0;
+    background: rgb(230, 230, 230);
+    -webkit-appearance: none;
+    appearance: none;
+    accent-color: #9b59b6;
+}
+
+.ban-search-vertical .form-group input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #9b59b6;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.ban-search-vertical .form-group input[type="range"]::-moz-range-thumb {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #9b59b6;
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.ban-search-vertical .age-range-inputs {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+.ban-search-vertical .age-range-inputs input {
+    flex: 1;
+    height: 40px;
+    padding: 8px 12px !important;
+}
+
+.ban-search-vertical .age-separator {
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 25px;
+}
+
+.ban-search-vertical .search-btn {
+    width: 100%;
+    padding: 14px 25px !important;
+    background: linear-gradient(135deg, #9b59b6, #b565d8) !important;
+    color: rgb(255, 255, 255) !important;
+    border: none !important;
+    border-radius: 5px !important;
+    font-size: 16px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 1px !important;
+    cursor: pointer !important;
+    transition: all 0.3s ease !important;
+    font-family: 'Josefin Sans', sans-serif !important;
+    margin-top: 8px !important;
+    height: auto !important;
+}
+
+.ban-search-vertical .search-btn:hover {
+    background: linear-gradient(135deg, #8b4aa0, #a553c8) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(155, 89, 182, 0.4);
+}
+
+/*-------------------------------------------------------*/
+/* MOBILE RESPONSIVE - VERTICAL STACKING
+/*-------------------------------------------------------*/
+@media screen and (max-width: 768px) {
+    .hom-ban-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .hom-ban-wrapper .ban-tit {
+        text-align: center;
+    }
+
+    .hom-ban-wrapper .ban-tit h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .ban-search-vertical {
+        width: 90%;
+        max-width: 400px;
+        background: rgba(127, 85, 175, 0.95) !important;
+        border: 2px solid rgba(255, 255, 255, 0.5);
+        padding: 30px 20px;
+        position: relative;
+        z-index: 5;
+        pointer-events: auto;
+    }
+
+    .ban-search-vertical form {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .ban-search-vertical .form-group {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        pointer-events: auto;
+    }
+
+    .ban-search-vertical .form-group select,
+    .ban-search-vertical .form-group input[type="number"],
+    .ban-search-vertical .form-group input[type="range"],
+    .ban-search-vertical .form-group input[type="submit"] {
+        pointer-events: auto;
+        cursor: pointer;
+    }
+
+    .ban-search-vertical .form-group label {
+        color: rgb(255, 255, 255);
+        font-size: 13px;
+        font-weight: 600;
+    }
+
+    .ban-search-vertical .search-btn {
+        padding: 14px 20px !important;
+        font-size: 15px !important;
+        margin-top: 10px !important;
+    }
 }
 
 /*-------------------------------------------------------*/
