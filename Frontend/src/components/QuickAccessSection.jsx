@@ -205,7 +205,7 @@ export default function QuickAccessSection() {
                 navigation
                 pagination={{ clickable: true, dynamicBullets: true }}
                 autoplay={{ delay: 3500, disableOnInteraction: false }}
-                loop={true}
+                loop={false}
                 breakpoints={{
                   768: {
                     slidesPerView: 2,

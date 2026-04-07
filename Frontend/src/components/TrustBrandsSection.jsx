@@ -165,7 +165,7 @@ export default function TrustBrandsSection() {
                 navigation
                 pagination={{ clickable: true, dynamicBullets: true }}
                 autoplay={{ delay: 4000, disableOnInteraction: false }}
-                loop={true}
+                loop={false}
                 breakpoints={{
                   768: {
                     slidesPerView: 2,

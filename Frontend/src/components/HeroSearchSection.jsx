@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import './HeroSearchSection.css';
 import bannerBg from '../assets/images/ban-bg.jpg';
 import bannerImg from '../assets/images/banner.jpg';
 import coupleImg1 from '../assets/images/couples/1.jpg';
@@ -27,97 +28,124 @@ export default function HeroSearchSection() {
 
   return (
     <>
-      {/* BANNER & SEARCH */}
-      <section>
-        <div className="str">
-          <div className="hom-head">
-            <div className="container">
-              <div className="row">
-                <div className="hom-ban-wrapper">
-                  <div className="ban-tit" style={{ textAlign: 'left', color: '#fff', padding: '20px 0' }}>
-                    <span style={{ display: 'flex', alignItems: 'center', marginBottom: '10px', textTransform: 'uppercase', fontWeight: '300', fontSize: '24px' }}>
-                      <i className="no1" style={{ fontSize: '70px', fontWeight: '900', fontStyle: 'normal', marginRight: '15px', color: 'rgba(255,255,255,0.8)', fontFamily: 'serif' }}>#1</i> 
-                      <span style={{ borderTop: '1px solid rgba(255,255,255,0.3)', borderBottom: '1px solid rgba(255,255,255,0.3)', padding: '5px 0', letterSpacing: '3px' }}>Matrimony</span>
-                    </span>
-                    <h1 style={{ fontSize: '50px', fontWeight: 'bold', lineHeight: '1.1', margin: '10px 0' }}>
-                      <span style={{ display: 'block', fontSize: '40px', fontWeight: '300', opacity: '0.9' }}>Find your</span>
-                      <b style={{ color: '#df3535', fontSize: '1.4em', textShadow: '2px 2px 4px rgba(0,0,0,0.3)' }}>Right Match</b> 
-                      <span style={{ fontSize: '30px', fontWeight: '300', marginLeft: '10px', opacity: '0.8' }}>here</span>
-                    </h1>
-                    <p style={{ fontSize: '20px', fontWeight: '400', letterSpacing: '0.5px', marginTop: '15px', color: 'rgba(255,255,255,0.9)' }}>Most trusted Matrimony Brand in the World.</p>
-                  </div>
-                  <div className="ban-search-vertical chosenini">
-                    <form>
-                      <div className="form-group">
-                        <label>Looking For</label>
-                        <select className="chosen-select">
-                          <option value="">Groom</option>
-                          <option value="Men">Groom</option>
-                          <option value="Women">Bride</option>
-                        </select>
-                      </div>
-                      <div className="form-group">
-                        <label>Age</label>
-                        <input type="range" className="age-range" min="18" max="100" defaultValue="25" />
-                      </div>
-                      <div className="form-group age-range-inputs">
-                        <input type="number" className="age-min" placeholder="25" defaultValue="25" min="18" max="100" />
-                        <span className="age-separator">to</span>
-                        <input type="number" className="age-max" placeholder="35" defaultValue="35" min="18" max="100" />
-                      </div>
-                      <div className="form-group">
-                        <label>Community</label>
-                        <select className="chosen-select">
-                          <option>Choose your Christian Community</option>
-                          <option>Any</option>
-                          <option>Hindu</option>
-                          <option>Muslim</option>
-                          <option>Jain</option>
-                          <option>Christian</option>
-                        </select>
-                      </div>
-                      <div className="form-group">
-                        <input type="submit" className="search-btn" defaultValue="Search" />
-                      </div>
-                    </form>
-                  </div>
+      {/* BANNER SLIDER (BACKGROUND) */}
+      <section className="hom-ban-sli">
+        <div>
+          <ul className="ban-sli">
+            <li>
+              <div>
+                <img src={bannerBg} alt="Wedding Banner 1" loading="lazy" />
+              </div>
+            </li>
+            <li>
+              <div>
+                <img src={bannerImg} alt="Wedding Banner 2" loading="lazy" />
+              </div>
+            </li>
+            <li>
+              <div>
+                <img src={coupleImg1} alt="Recent Couple 1" loading="lazy" />
+              </div>
+            </li>
+            <li>
+              <div>
+                <img src={coupleImg2} alt="Recent Couple 2" loading="lazy" />
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      {/* HERO CONTENT & SEARCH */}
+      <section className="hero-search-container">
+        <div className="container">
+          <div className="hero-content-wrapper">
+            
+            {/* Left Side: Professional Content */}
+            <div className="hero-text-block">
+              <div className="hero-badge">
+                <i className="fa fa-star"></i> #1 Trusted Matrimony Brand
+              </div>
+              <h1>
+                Begin Your Journey to 
+                <b>Eternal Love</b>
+              </h1>
+              <p>
+                Discover meaningful connections and find your perfect life partner 
+                among thousands of verified profiles. Join the world's most trusted 
+                matrimony platform today.
+              </p>
+              <div className="hero-features">
+                <div className="hero-feature-item">
+                  <i className="fa fa-check"></i> 100% Verified Profiles
+                </div>
+                <div className="hero-feature-item">
+                  <i className="fa fa-lock"></i> Secure & Private
+                </div>
+                <div className="hero-feature-item">
+                  <i className="fa fa-heart"></i> Successful Stories
                 </div>
               </div>
             </div>
+
+            {/* Right Side: Modern Search Form */}
+            <div className="hero-form-block">
+              <div className="modern-search-card">
+                <div className="search-card-head">
+                  <h3>Find Your Match</h3>
+                  <p>Fast & Efficient Way to Search</p>
+                </div>
+                <form className="modern-form">
+                  <div className="form-group">
+                    <label>I'm looking for a</label>
+                    <select className="form-control">
+                      <option value="Women">Bride (Woman)</option>
+                      <option value="Men">Groom (Man)</option>
+                    </select>
+                  </div>
+                  
+                  <div className="form-group">
+                    <label>Age Preferred</label>
+                    <div className="age-range-grid">
+                      <input type="number" className="form-control" placeholder="Min" defaultValue="21" />
+                      <span className="age-sep">to</span>
+                      <input type="number" className="form-control" placeholder="Max" defaultValue="35" />
+                    </div>
+                  </div>
+
+                  <div className="form-group">
+                    <label>Religion / Community</label>
+                    <select className="form-control">
+                      <option value="">Any Religion</option>
+                      <option value="Christian">Christian</option>
+                      <option value="Hindu">Hindu</option>
+                      <option value="Muslim">Muslim</option>
+                      <option value="Jain">Jain</option>
+                      <option value="Sikh">Sikh</option>
+                    </select>
+                  </div>
+
+                  <div className="form-group">
+                    <label>Location</label>
+                    <select className="form-control">
+                      <option value="">Select Location</option>
+                      <option value="Chennai">Chennai</option>
+                      <option value="Bangalore">Bangalore</option>
+                      <option value="Mumbai">Mumbai</option>
+                      <option value="Delhi">Delhi</option>
+                    </select>
+                  </div>
+
+                  <button type="submit" className="hero-search-btn">
+                    <i className="fa fa-search"></i> Search Profiles
+                  </button>
+                </form>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
-      {/* END */}
-      {/* BANNER SLIDER */}
-      <section>
-        <div className="hom-ban-sli">
-          <div>
-            <ul className="ban-sli">
-              <li>
-                <div>
-                  <img src={bannerBg} alt="" loading="lazy" />
-                </div>
-              </li>
-              <li>
-                <div>
-                  <img src={bannerImg} alt="" loading="lazy" />
-                </div>
-              </li>
-              <li>
-                <div>
-                  <img src={coupleImg1} alt="" loading="lazy" />
-                </div>
-              </li>
-              <li>
-                <div>
-                  <img src={coupleImg2} alt="" loading="lazy" />
-                </div>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </section>
-      {/* END */}
     </>
   );
 }

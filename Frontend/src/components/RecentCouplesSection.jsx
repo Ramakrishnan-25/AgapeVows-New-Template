@@ -169,7 +169,7 @@ export default function RecentCouplesSection() {
                 navigation
                 pagination={{ clickable: true, dynamicBullets: true }}
                 autoplay={{ delay: 3800, disableOnInteraction: false }}
-                loop={true}
+                loop={false}
                 breakpoints={{
                   768: {
                     slidesPerView: 2,
