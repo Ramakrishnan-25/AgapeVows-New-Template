@@ -161,11 +161,11 @@ export default function MainMenu() {
             <div className="hom-nav">
               {/* LOGO */}
               <div className="logo">
-                <span className="menu desk-menu">
+                {/* <span className="menu desk-menu">
                   <i />
                   <i />
                   <i />
-                </span>
+                </span> */}
                 <a href="index.html" className="logo-brand">
                   <img src={logoBImg} alt="" loading="lazy" className="ic-logo" />
                 </a>
