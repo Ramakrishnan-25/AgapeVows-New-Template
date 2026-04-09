@@ -13,9 +13,11 @@ import MainMenu from './MainMenu';
 import HeroSearchSection from './HeroSearchSection';
 import QuickAccessSection from './QuickAccessSection';
 import TrustBrandsSection from './TrustBrandsSection';
+
+import AboutWelcomeSection from './AboutWelcomeSection';
 import WhyChooseUsSection from './WhyChooseUsSection';
 import FeaturesSection from './FeaturesSection';
-import AboutWelcomeSection from './AboutWelcomeSection';
+
 import StatsSection from './StatsSection';
 import HowItWorksSection from './HowItWorksSection';
 import RecentCouplesSection from './RecentCouplesSection';
@@ -44,14 +46,14 @@ export default function UserHomePage() {
       {/* Quick Access & Services */}
       <QuickAccessSection />
       
+      {/* About Us Section */}
+      <AboutWelcomeSection />
+
       {/* Why Choose Us Section */}
       <WhyChooseUsSection />
       
       {/* Features/Benefits */}
       <FeaturesSection />
-      
-      {/* About Us Section */}
-      <AboutWelcomeSection />
       
       {/* Statistics */}
       <StatsSection />

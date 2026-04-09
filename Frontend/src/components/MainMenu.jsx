@@ -17,84 +17,41 @@ export default function MainMenu() {
           <i className="fa fa-times" aria-hidden="true" />
         </span>
         <div className="inn">
-          <img src={logoBImg} alt="" loading="lazy" className="logo-brand-only" />
-          <p>
-            <strong>Best Wedding Matrimony</strong> lacinia viverra lectus. Fusce
-            imperdiet ullamcorper metus eu fringilla.Lorem Ipsum is simply dummy text
-            of the printing and typesetting industry.
-          </p>
-          <ul className="menu-pop-info">
-            <li>
-              <a href="#!">
-                <i className="fa fa-phone" aria-hidden="true" />
-                +92 (8800) 68 - 8960
-              </a>
-            </li>
-            <li>
-              <a href="#!">
-                <i className="fa fa-whatsapp" aria-hidden="true" />
-                +92 (8800) 68 - 8960
-              </a>
-            </li>
-            <li>
-              <a href="#!">
-                <i className="fa fa-envelope-o" aria-hidden="true" />
-                help@company.com
-              </a>
-            </li>
-            <li>
-              <a href="#!">
-                <i className="fa fa-map-marker" aria-hidden="true" />
-                3812 Lena Lane City Jackson Mississippi
-              </a>
-            </li>
-          </ul>
-          <div className="menu-pop-help">
-            <h4>Support Team</h4>
-            <div className="user-pro">
-              <img src={profile1} alt="" loading="lazy" />
-            </div>
-            <div className="user-bio">
-              <h5>Ashley emyy</h5>
-              <span>Senior personal advisor</span>
-              <a href="enquiry.html" className="btn btn-primary btn-sm">
-                Ask your doubts
-              </a>
-            </div>
+          <div className="login-pop-header">
+            <h3>Login to <span>AgapeVows</span></h3>
+            <p>Enter your credentials to access your profile.</p>
           </div>
-          <div className="menu-pop-soci">
-            <ul>
-              <li>
-                <a href="#!">
-                  <i className="fa fa-facebook" aria-hidden="true" />
-                </a>
-              </li>
-              <li>
-                <a href="#!">
-                  <i className="fa fa-twitter" aria-hidden="true" />
-                </a>
-              </li>
-              <li>
-                <a href="#!">
-                  <i className="fa fa-whatsapp" aria-hidden="true" />
-                </a>
-              </li>
-              <li>
-                <a href="#!">
-                  <i className="fa fa-linkedin" aria-hidden="true" />
-                </a>
-              </li>
-              <li>
-                <a href="#!">
-                  <i className="fa fa-youtube-play" aria-hidden="true" />
-                </a>
-              </li>
-              <li>
-                <a href="#!">
-                  <i className="fa fa-instagram" aria-hidden="true" />
-                </a>
-              </li>
-            </ul>
+          
+          <form className="login-pop-form">
+            <div className="form-group mb-4">
+              <label className="mb-2">Email or Phone</label>
+              <input type="text" className="form-control" placeholder="Enter email address" required />
+            </div>
+            <div className="form-group mb-4">
+              <label className="mb-2">Password</label>
+              <input type="password" className="form-control" placeholder="Enter password" required />
+            </div>
+            <div className="d-flex justify-content-between mb-4">
+              <div className="form-check">
+                <input type="checkbox" className="form-check-input" id="rememberMe" />
+                <label className="form-check-label" htmlFor="rememberMe">Remember me</label>
+              </div>
+              <a href="#!" className="text-secondary small">Forgot Password?</a>
+            </div>
+            <button type="submit" className="login-btn-sidebar w-100 mb-4">Login Now</button>
+            
+            <div className="social-login-pop text-center">
+              <p className="small text-muted mb-3">Or Login with</p>
+              <div className="d-flex justify-content-center gap-3">
+                <a href="#!" className="btn btn-outline-secondary btn-sm rounded-pill px-3"><i className="fa fa-facebook me-2"></i> Facebook</a>
+                <a href="#!" className="btn btn-outline-secondary btn-sm rounded-pill px-3"><i className="fa fa-google me-2"></i> Google</a>
+              </div>
+            </div>
+          </form>
+
+          <div className="login-pop-footer text-center mt-5">
+            <p className="small">Don't have an account?</p>
+            <a href="sign-up.html" className="btn btn-primary font-weight-bold">Register for Free</a>
           </div>
         </div>
       </div>
@@ -443,6 +400,9 @@ export default function MainMenu() {
                     <a href="plans.html">Plans</a>
                   </li>
                   <li>
+                    <a href="#!" className="desk-menu">Login</a>
+                  </li>
+                  <li>
                     <a href="sign-up.html">Register</a>
                   </li>
                   <li className="smenu-pare">
@@ -751,8 +711,16 @@ export default function MainMenu() {
   .cta-4 {
     color: #000000 !important;
   }
+  /* LOGIN POPUP CUSTOM STYLES */
+  .login-pop-header h3 { font-size: 26px; font-weight: 700; margin-bottom: 10px; }
+  .login-pop-header h3 span { color: #7c3aed; }
+  .login-pop-header p { color: #666; font-size: 14px; margin-bottom: 30px; }
+  .login-btn-sidebar { background: #7c3aed; color: #fff; border: none; padding: 12px; border-radius: 8px; font-weight: 700; font-size: 16px; transition: 0.3s; }
+  .login-btn-sidebar:hover { background: #6d28d9; transform: translateY(-2px); }
+  .form-control { border-radius: 8px; border: 1px solid #ddd; padding: 12px; }
+  .form-control:focus { box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.2); border-color: #7c3aed; }
+  .login-pop-footer p { margin-bottom: 10px; font-weight: 600; }
 `}</style>
     </>
   );
-  
 }

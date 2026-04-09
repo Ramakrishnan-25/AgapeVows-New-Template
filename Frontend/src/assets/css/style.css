@@ -5680,10 +5680,18 @@ span.mail::before {
     /* color: rgb(51, 51, 51); */
 }
 
-.ab-wel {
-    padding: 100px 0px;
+.hom-ban-sli {
+    margin-bottom: 120px; 
 }
 
+.ab-wel {
+    padding: 100px 0;
+    margin-top: 20px !important;
+    float: left;
+    width: 100%;
+    position: relative;
+    z-index: 5;
+}
 .ab-wel-lhs{position: relative;}
 
 .ab-wel-lhs span {
