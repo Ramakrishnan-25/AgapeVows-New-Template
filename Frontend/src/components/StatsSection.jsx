@@ -9,38 +9,42 @@ export default function StatsSection() {
                 <div className="ab-cont-po">
                   <i className="fa fa-heart-o" aria-hidden="true" />
                   <div>
-                    <h4>2K</h4>
-                    <span>Couples pared</span>
+                    <h4 style={{ color: '#7c3aed' }}>2K</h4>
+                    <span style={{ color: '#000' }}>Couples pared</span>
                   </div>
                 </div>
               </li>
+
               <li>
                 <div className="ab-cont-po">
                   <i className="fa fa-users" aria-hidden="true" />
                   <div>
-                    <h4>4000+</h4>
-                    <span>Registerents</span>
+                    <h4 style={{ color: '#7c3aed' }}>4000+</h4>
+                    <span style={{ color: '#000' }}>Registerents</span>
                   </div>
                 </div>
               </li>
+
               <li>
                 <div className="ab-cont-po">
                   <i className="fa fa-male" aria-hidden="true" />
                   <div>
-                    <h4>1600+</h4>
-                    <span>Mens</span>
+                    <h4 style={{ color: '#7c3aed' }}>1600+</h4>
+                    <span style={{ color: '#000' }}>Mens</span>
                   </div>
                 </div>
               </li>
+
               <li>
                 <div className="ab-cont-po">
                   <i className="fa fa-female" aria-hidden="true" />
                   <div>
-                    <h4>2000+</h4>
-                    <span>Womens</span>
+                    <h4 style={{ color: '#7c3aed' }}>2000+</h4>
+                    <span style={{ color: '#000' }}>Womens</span>
                   </div>
                 </div>
               </li>
+
             </ul>
           </div>
         </div>

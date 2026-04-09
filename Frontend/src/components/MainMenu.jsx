@@ -716,6 +716,43 @@ export default function MainMenu() {
         </div>
       </div>
       {/* END USER PROFILE MENU POPUP */}
+      <style>{`
+  /* ALL MENU TEXT → BLACK */
+  .hom-nav ul li a,
+  .smenu,
+  .menu-box h5,
+  .menu-box span,
+  .multi-col h4,
+  .multi-col ul li a,
+  .smenu-single ul li a,
+  .menu-pop-info li a,
+  .menu-pop-help h4,
+  .menu-pop-help h5,
+  .menu-pop-help span,
+  .late-news h4,
+  .late-news h5,
+  .late-news span,
+  .mv-bus h4,
+  .mv-bus ul li a,
+  .prof-rhs-help h3,
+  .prof-rhs-help p,
+  .prof-rhs-help a {
+    color: #000000 !important;
+  }
+
+  /* MENU LABELS (Explore, All pages...) */
+  .smenu {
+    color: #000000 !important;
+  }
+
+  /* BUTTON LINKS (optional keep black text) */
+  .btn,
+  .cta-3,
+  .cta-4 {
+    color: #000000 !important;
+  }
+`}</style>
     </>
   );
+  
 }

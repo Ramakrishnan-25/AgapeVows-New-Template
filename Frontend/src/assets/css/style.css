@@ -404,7 +404,7 @@ img{
 /* HOME BANNER
 /*-------------------------------------------------------*/
 .hom-head {
-    padding: 8% 0 50px 0;
+    padding: 8% 0 10px 0;
     position: relative;
     width: 100%;
     float: left;
@@ -433,7 +433,7 @@ img{
 }
 
 .head-top {
-    background: linear-gradient(to right, #b8860b, #8b6508);
+    background: linear-gradient(to right, #7c3aed, #a855f7) !important;
 }
 
 .head-top .rhs ul {
@@ -481,7 +481,8 @@ img{
 }
 
 .hom-ban {
-    float: left;
+    /* float: left; */
+    display: block;
     width: 100%;
     position: relative;
     z-index: 1;

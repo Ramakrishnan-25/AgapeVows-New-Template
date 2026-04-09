@@ -1,6 +1,5 @@
 import about1 from '../assets/images/about/1.jpg';
 import couple20 from '../assets/images/couples/20.jpg';
-
 export default function AboutWelcomeSection() {
   return (
     <section>
@@ -15,53 +14,65 @@ export default function AboutWelcomeSection() {
                 <span className="ab-wel-4" />
               </div>
             </div>
+
             <div className="col-lg-6">
               <div className="ab-wel-rhs">
+
                 <div className="ab-wel-tit">
                   <h2>
-                    Welcome to <em>Wedding matrimony</em>
+                    <span style={{ color: '#7c3aed' }}>Welcome to</span>{" "}
+                    <em>Wedding matrimony</em>
                   </h2>
-                  <p>
+
+                  {/* 🖤 Content */}
+                  <p style={{ color: '#000' }}>
                     Best wedding matrimony It is a long established fact that a reader
                     will be distracted by the readable content of a page when looking at
-                    its layout.{" "}
+                    its layout.
                   </p>
-                  <p>
-                    {" "}
-                    <a href="plans.html">Click here to</a> Start you matrimony service
-                    now.
+
+                  <p style={{ color: '#000' }}>
+                    <a href="plans.html" style={{ color: '#7c3aed' }}>
+                      Click here to
+                    </a>{" "}
+                    Start you matrimony service now.
                   </p>
                 </div>
+
                 <div className="ab-wel-tit-1">
-                  <p>
+                  <p style={{ color: '#000' }}>
                     There are many variations of passages of Lorem Ipsum available, but
                     the majority have suffered alteration in some form, by injected
                     humour, or randomised words which don't look even slightly
                     believable.
                   </p>
                 </div>
+
                 <div className="ab-wel-tit-2">
                   <ul>
                     <li>
                       <div>
                         <i className="fa fa-phone" aria-hidden="true" />
-                        <h4>
+                        <h4 style={{ color: '#7c3aed' }}>
                           Enquiry <em>+01 2242 3366</em>
                         </h4>
                       </div>
                     </li>
+
                     <li>
                       <div>
                         <i className="fa fa-envelope-o" aria-hidden="true" />
-                        <h4>
+                        <h4 style={{ color: '#7c3aed' }}>
                           Get Support <em>info@example.com</em>
                         </h4>
                       </div>
                     </li>
                   </ul>
                 </div>
+
               </div>
             </div>
+
           </div>
         </div>
       </div>

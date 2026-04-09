@@ -30,17 +30,44 @@ export default function RecentCouplesSection() {
 
   return (
     <section>
-      <div className="hom-couples-all" style={{ padding: '60px 0', background: 'var(--bg, #fdfcfb)', position: 'relative' }}>
+      <div 
+        className="hom-couples-all" 
+        style={{ 
+          padding: '30px 0',
+          marginTop: '-30px',
+          background: 'var(--bg, #fdfcfb)', 
+          position: 'relative' 
+        }}
+      >
         <div className="container">
           <div className="row">
             
             <div className="home-tit" style={{ textAlign: 'center', marginBottom: '50px' }}>
-              <p style={{ color: '#d4af37', textTransform: 'uppercase', letterSpacing: '2px', fontWeight: '500', fontSize: '20px', marginBottom: '10px' }}>Trusted Brand</p>
-              <h2 style={{ fontSize: '56px', color: '#333', fontFamily: '"Playfair Display", serif', fontWeight: 'bold' }}>
-                <span style={{ position: 'relative', display: 'inline-block' }}>
+              
+              {/* 🔥 Trusted Brand → BLACK */}
+              <p style={{ 
+                color: '#000000', 
+                textTransform: 'uppercase', 
+                letterSpacing: '2px', 
+                fontWeight: '500', 
+                fontSize: '20px', 
+                marginBottom: '10px' 
+              }}>
+                Trusted Brand
+              </p>
+
+              {/* 🔥 Recent Couples → VIOLET */}
+              <h2 style={{ 
+                fontSize: '56px', 
+                color: '#333', 
+                fontFamily: '"Playfair Display", serif', 
+                fontWeight: 'bold' 
+              }}>
+                <span style={{ position: 'relative', display: 'inline-block', color: '#7c3aed' }}>
                   Recent Couples
                 </span>
               </h2>
+
               <span className="leaf1" />
               <span className="tit-ani-" />
             </div>
@@ -136,9 +163,11 @@ export default function RecentCouplesSection() {
                   display: block;
                   letter-spacing: 0.5px;
                 }
+
+                /* 🔥 BUTTON → VIOLET */
                 .premium-couple-link {
                   color: #fff;
-                  background: #d4af37;
+                  background: #7c3aed;
                   font-weight: 500;
                   font-size: 13px;
                   text-decoration: none;
@@ -148,13 +177,14 @@ export default function RecentCouplesSection() {
                   padding: 8px 25px;
                   border-radius: 20px;
                   transition: all 0.3s ease;
-                  box-shadow: 0 4px 10px rgba(212, 175, 55, 0.3);
+                  box-shadow: 0 4px 10px rgba(124, 58, 237, 0.3);
                 }
                 .premium-couple-link:hover {
-                  background: #b39129;
+                  background: #5b21b6;
                   transform: translateY(-2px);
-                  box-shadow: 0 6px 15px rgba(212, 175, 55, 0.4);
+                  box-shadow: 0 6px 15px rgba(124, 58, 237, 0.4);
                 }
+
                 @media (max-width: 768px) {
                    .premium-couple-card { margin: 10px; }
                    .swiper-premium-wrapper .swiper-button-next,

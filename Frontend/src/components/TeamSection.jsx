@@ -6,16 +6,31 @@ import profile9 from '../assets/images/profiles/9.jpg';
 export default function TeamSection() {
   return (
     <section>
-      <div className="ab-team">
+     <div 
+  className="ab-team" 
+  style={{ 
+    paddingTop: '20px',   // reduce top space
+    marginTop: '-50px'    // remove extra gap
+  }}
+>
         <div className="container">
           <div className="row">
-            <div className="home-tit">
-              <p>OUR PROFESSIONALS</p>
-              <h2>
-                <span>Meet Our Team</span>
-              </h2>
-              <span className="leaf1" />
-            </div>
+           <div className="home-tit">
+  
+  {/* 🔥 OUR PROFESSIONALS → BLACK */}
+  <p style={{ color: '#000000' }}>
+    OUR PROFESSIONALS
+  </p>
+
+  {/* 🔥 Meet Our Team → VIOLET */}
+  <h2>
+    <span style={{ color: '#7c3aed' }}>
+      Meet Our Team
+    </span>
+  </h2>
+
+  <span className="leaf1" />
+</div>
             <ul>
               <li>
                 <div>

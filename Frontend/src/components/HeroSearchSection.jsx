@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import './HeroSearchSection.css';
 import bannerBg from '../assets/images/ban-bg.jpg';
 import bannerImg from '../assets/images/banner.jpg';
@@ -6,6 +6,10 @@ import coupleImg1 from '../assets/images/couples/1.jpg';
 import coupleImg2 from '../assets/images/couples/2.jpg';
 
 export default function HeroSearchSection() {
+  const [minAge, setMinAge] = useState(25);
+  const [maxAge, setMaxAge] = useState(35);
+  const ageOptions = Array.from({ length: 53 }, (_, i) => 18 + i);
+
   useEffect(() => {
     if (window.$ && window.$.fn.slick) {
       const $carousel = $('.ban-sli');
@@ -104,12 +108,55 @@ export default function HeroSearchSection() {
                     </select>
                   </div>
                   
-                  <div className="form-group">
-                    <label>Age Preferred</label>
-                    <div className="age-range-grid">
-                      <input type="number" className="form-control" placeholder="Min" defaultValue="21" />
-                      <span className="age-sep">to</span>
-                      <input type="number" className="form-control" placeholder="Max" defaultValue="35" />
+                  <div className="form-group age-form-group">
+                    <label>AGE</label>
+                    <div className="age-slider-wrapper">
+                      <div className="slider-track" style={{
+                        background: `linear-gradient(to right, rgba(255,255,255,0.3) ${((minAge - 18) / (70 - 18)) * 100}%, #9b4dff ${((minAge - 18) / (70 - 18)) * 100}%, #9b4dff ${((maxAge - 18) / (70 - 18)) * 100}%, rgba(255,255,255,0.3) ${((maxAge - 18) / (70 - 18)) * 100}%)`
+                      }}></div>
+                      <input 
+                        type="range" 
+                        min="18" 
+                        max="70" 
+                        value={minAge} 
+                        onChange={(e) => {
+                          const val = Math.min(parseInt(e.target.value), maxAge - 1);
+                          setMinAge(val);
+                        }}
+                        className="age-range min-age"
+                      />
+                      <input 
+                        type="range" 
+                        min="18" 
+                        max="70" 
+                        value={maxAge} 
+                        onChange={(e) => {
+                          const val = Math.max(parseInt(e.target.value), minAge + 1);
+                          setMaxAge(val);
+                        }}
+                        className="age-range max-age"
+                      />
+                    </div>
+                    <div className="age-dropdown-row">
+                      <select 
+                        value={minAge} 
+                        onChange={(e) => setMinAge(parseInt(e.target.value))}
+                        className="age-select"
+                      >
+                        {ageOptions.map(age => (
+                          <option key={age} value={age}>{age}</option>
+                        ))}
+                      </select>
+                      <span className="age-to-text">to</span>
+                      <select 
+                        value={maxAge} 
+                        onChange={(e) => setMaxAge(parseInt(e.target.value))}
+                        className="age-select"
+                      >
+                        {ageOptions.map(age => (
+                          <option key={age} value={age}>{age}</option>
+                        ))}
+                      </select>
                     </div>
                   </div>
 
@@ -125,7 +172,7 @@ export default function HeroSearchSection() {
                     </select>
                   </div>
 
-                  <div className="form-group">
+                  {/* <div className="form-group">
                     <label>Location</label>
                     <select className="form-control">
                       <option value="">Select Location</option>
@@ -134,7 +181,7 @@ export default function HeroSearchSection() {
                       <option value="Mumbai">Mumbai</option>
                       <option value="Delhi">Delhi</option>
                     </select>
-                  </div>
+                  </div> */}
 
                   <button type="submit" className="hero-search-btn">
                     <i className="fa fa-search"></i> Search Profiles

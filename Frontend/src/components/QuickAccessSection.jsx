@@ -56,7 +56,16 @@ export default function QuickAccessSection() {
 
   return (
     <section>
-      <div className="str home-acces-main" style={{ padding: '60px 0', background: 'linear-gradient(135deg, #fffcf5 0%, #f7ebd5 100%)', position: 'relative', overflow: 'hidden' }}>
+     <div 
+  className="str home-acces-main" 
+  style={{ 
+    padding: '25px 0',
+    marginTop: '-120px',
+    background: 'linear-gradient(135deg, #fffcf5 0%, #f7ebd5 100%)',
+    position: 'relative',
+    overflow: 'hidden'
+  }}
+>
         <div className="container">
           <div className="row">
             {/* BACKGROUND SHAPE */}
@@ -67,12 +76,25 @@ export default function QuickAccessSection() {
             {/* END BACKGROUND SHAPE */}
             
             <div className="home-tit" style={{ textAlign: 'center', marginBottom: '50px' }}>
-              <p style={{ color: '#d4af37', textTransform: 'uppercase', letterSpacing: '2px', fontWeight: '500', fontSize: '20px', marginBottom: '10px' }}>Quick Access</p>
-              <h2 style={{ fontSize: '56px', color: '#333', fontFamily: '"Playfair Display", serif', fontWeight: 'bold' }}>
-                <span style={{ position: 'relative', display: 'inline-block' }}>
-                  Our Services
-                </span>
-              </h2>
+              <p style={{ color: '#000000ff', textTransform: 'uppercase', letterSpacing: '2px', fontWeight: '500', fontSize: '20px', marginBottom: '10px' }}>Quick Access</p>
+             <h2 
+  style={{ 
+    fontSize: '56px', 
+    color: '#7c3aed',   // 🔥 violet color
+    fontFamily: '"Playfair Display", serif', 
+    fontWeight: 'bold' 
+  }}
+>
+  <span 
+    style={{ 
+      position: 'relative', 
+      display: 'inline-block',
+     color: '#a855f7'
+    }}
+  >
+    Our Services
+  </span>
+</h2>
               <span className="leaf1" />
               <span className="tit-ani-" />
             </div>

@@ -37,11 +37,12 @@ export default function UserHomePage() {
       {/* Hero Section */}
       <HeroSearchSection />
       
-      {/* Quick Access & Services */}
-      <QuickAccessSection />
       
       {/* Social Proof & Reviews */}
       <TrustBrandsSection />
+
+      {/* Quick Access & Services */}
+      <QuickAccessSection />
       
       {/* Why Choose Us Section */}
       <WhyChooseUsSection />

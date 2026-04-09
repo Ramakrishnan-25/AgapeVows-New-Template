@@ -42,15 +42,28 @@ export default function TrustBrandsSection() {
 
   return (
     <section>
-      <div className="hom-cus-revi" style={{ padding: '20px 0 60px 0', background: 'var(--bg, #fdfcfb)' }}>
+     <div 
+  className="hom-cus-revi" 
+  style={{ 
+    padding: '0px 0 60px 0',  // 🔥 top padding removed
+    marginTop: '-50px',       // 🔥 extra gap remove
+    background: 'var(--bg, #fdfcfb)' 
+  }}
+>
         <div className="container">
           <div className="row">
             <div className="home-tit" style={{ textAlign: 'center', marginBottom: '50px' }}>
-              <p style={{ color: '#d4af37', textTransform: 'uppercase', letterSpacing: '2px', fontWeight: '500', fontSize: '20px', marginBottom: '10px' }}>Trusted Brand</p>
+              <p style={{ color: '#000000ff', textTransform: 'uppercase', letterSpacing: '2px', fontWeight: '500', fontSize: '20px', marginBottom: '10px' }}>Trusted Brand</p>
               <h2 style={{ fontSize: '56px', color: '#333', fontFamily: '"Playfair Display", serif', fontWeight: 'bold' }}>
-                <span style={{ position: 'relative', display: 'inline-block' }}>
-                  Trust by <b className="num" style={{ color: '#d4af37' }}>1500</b>+ Couples
-                </span>
+                <span 
+  style={{ 
+    position: 'relative', 
+    display: 'inline-block',
+    color: '#a855f7'
+  }}
+>
+  Trust by <b className="num">1500</b>+ Couples
+</span>
               </h2>
               <span className="leaf1" />
               <span className="tit-ani-" />

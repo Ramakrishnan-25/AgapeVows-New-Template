@@ -16,11 +16,20 @@ export default function GallerySection() {
         <div className="">
           <div className="gall-inn">
             <div className="home-tit">
-              <p>collections</p>
-              <h2>
-                <span>Photo gallery</span>
-              </h2>
-              <span className="leaf1" />
+  
+  {/* 🔥 collections → BLACK */}
+  <p style={{ color: '#000000' }}>
+    collections
+  </p>
+
+  {/* 🔥 Photo gallery → VIOLET */}
+  <h2>
+    <span style={{ color: '#7c3aed' }}>
+      Photo gallery
+    </span>
+  </h2>
+
+  <span className="leaf1" />
               <span className="tit-ani-" />
             </div>
             <div className="col-sm-6 col-md-2">
